@@ -10,7 +10,7 @@ $(document).ready(function() {
 				$("ul").append("<li>" + movie + " was not found in this massive database! Try again stubby fingers!</li>");
 				$(".movieName").val("");
 			} else {
-				$("ul").append("<li>Movie: " + data.Title + "</li><li>Year: " + data.Year + "</li><li>Actors: " + data.Actors + "</li><br><img src=" + data.Poster + ">");
+				$("ul").append("<li>Movie: " + "<a href='"+ data.Poster + "'>" + data.Title + "</a></li> <li>Year: " + data.Year + "</li><li>Actors: " + data.Actors + "</li>");
 				$(".movieName").val("");
 			}
 		});
@@ -19,3 +19,5 @@ $(document).ready(function() {
 
 
 });
+
+
